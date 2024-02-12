@@ -17,14 +17,15 @@ public class Application01 {
         int num1 = 10;
         int num2 = -10;
 
-        String result1 = (num1 > 0)? "양수다." : "양수가 아니다.";
-        String result2 = (num2 >0)? "양수다. " : "양수가 아니다.";
+        String result1 = (num1 > 0)? "양수다." : "양수가 아니다.";  //true
+        String result2 = (num2 >0)? "양수다. " : "양수가 아니다.";  //false
         System.out.println("result1 = " + result1);
         System.out.println("result2= " + result2);
-        // 조건식 만들기; true면 앞의 값이 반환(result1),
-        //              falase면 뒤의 값을 반환하는(result2) 예이다.
+        // 조건식 만들기; true면 앞의 값이 반환(result1),             //양수다
+        //              falase면 뒤의 값을 반환하는(result2) 예이다. //양수가 아니다
 
 
+        //중요! 다시 볼 필요 있음!!
         /*목차. 2. 삼항연산자 중첩 사용 */
 
         int num3 = 5;
@@ -41,7 +42,6 @@ public class Application01 {
 
         //result4만 보자면, 앞에는 false므로 뒤에 있는 조건식에 다시 한번 조건식을 붙여서 확인.
         // 따라서 뒤의 식은 참이므로 0이다 가 나옴.
-
 
     }
 }

@@ -16,11 +16,11 @@ public class Application {
         /* 필기.
         *   비교연산자의 종류
         *   '==': 왼쪽의 피연산자와 오른쪽의 피연산자가 같으면 true 다르면 false를 반환, 같다.
-        *   '!=': 왼쪽의 피연산자와 오른쪽의 피연산자가 다르면 true 같으면 false를 반환, 같지 않다(부정).
+        *   '!=': 왼쪽의 피연산자와 오른쪽의 피연산자가 다르면 true 같으면 false를 반환, 같지 않다(부정). / 역시 왼쪽결과부터 true
         *   '>' : 왼쪽의 피연산자가 오른쪽의 피연산자 보다 크면 true 아니면 false를 반환
-        *   '>=': 왼쪽의 피연산자가 오른쪽의 피연산자 보다 크거나 같으면 true 아니면 false를 반환
+        *   '>=': 왼쪽의 피연산자가 오른쪽의 피연산자 보다 크거나 같으면 true 아니면 false를 반환 / 역시 왼쪽 결과부터 true
         *   '<' : 왼쪽의 피연산자가 오른쪽의 피연산자 보다 작으면 true 아니면 false를 반환
-        *   '<=': 왼쪽의 피연산자가 오른쪽의 피연산자 작거나 같으면 true 아니면 false를 반환
+        *   '<=': 왼쪽의 피연산자가 오른쪽의 피연산자 작거나 같으면 true 아니면 false를 반환 / 역시 왼쪽 결과부터 true
         * */
 
         /* 목차. 1. 숫자값 비교 */
@@ -30,7 +30,6 @@ public class Application {
 
         System.out.println("==========정수값 비교=============");
         System.out.println("num1과 num2가 같은지 비교: " + (inum1 == inum2));
-        System.out.println("num1과 num2가 같은 않은 지 비교: " + (inum1 != inum2));
         System.out.println("num1과 num2가 같은 않은 지 비교: " + (inum1 != inum2));
         // 구분선
         System.out.println("num1이 num2보다 큰 지 비교: " + (inum1 > inum2));
@@ -51,16 +50,17 @@ public class Application {
         System.out.println("ch1이 ch2가 크거나 같은지 비교 : " + (ch1 >= ch2));
         System.out.println("ch1이 ch2가 작은지 비교 : " + (ch1 < ch2));
         System.out.println("ch1이 ch2가 작거나 같은지 비교 : " + (ch1 <= ch2));
-        // 문자의 대,소 비교를 아스키코드의 숫자로 비교가능(컴퓨터는 문자를 숫자로 인식하고 있기 때문에)
+        // 문자 의 대,소 비교를 아스키코드의 숫자로 비교가능(컴퓨터는 문자를 숫자로 인식하고 있기 때문에)
 
 
+        // 중요!! 논리값, 문자열은 대소비교 불가하다!(참,거짓 비교만 가능)
         /* 목차. 3. 논리값 비교 */
         boolean bool1 = true;
         boolean bool2 = false;
         /*필기. 논리값은 ==과!= 비교가 가능하지만, 대소비교는 불가능하다.*/
         System.out.println("=========논리값 비교=========================");
-        System.out.println("bool1과 bool2가 같은지 비교: " + (bool1 ==bool2));
-        System.out.println("bool1과 bool2가 다른지 비교: " + (bool1 !=bool2));
+        System.out.println("bool1과 bool2가 같은지 비교: " + (bool1 ==bool2));   //false
+        System.out.println("bool1과 bool2가 다른지 비교: " + (bool1 !=bool2));   //true 만 비교가능(대소비교는 no~no)
         System.out.println("============================================");
 //        System.out.println("bool1이 bool2가 큰지 비교: " + (bool1 > bool2));
 //        System.out.println("bool1이 bool2가 크거나 같은지 비교: " + (bool1 >=bool2));
@@ -74,31 +74,13 @@ public class Application {
         String str2 = "java";
 
         System.out.println("========================문자열 값 비교=====================");
-        System.out.println("str1과 str2가 같은지 비교 :" + (str1 == str2));
-        System.out.println("str1과 str2가 다른지 비교 :" + (str1 != str2));
+        System.out.println("str1과 str2가 같은지 비교 :" + (str1 == str2));  // true
+        System.out.println("str1과 str2가 다른지 비교 :" + (str1 != str2));  // false만 비교가능(대소비교는 no~no)
         System.out.println("==========================================================");
 //        System.out.println("str1이 str2가 큰지 비교 :"  (str1 > str2));
 //        System.out.println("str1이 str2가 크거나 같은지 비교 :"  (str1 >= str2));
 //        System.out.println("str1이 str2가 작은지 비교 :"  (str1 < str2));
 //        System.out.println("str1이 str2가 작거나 같은지 비교 :"  (str1 <= str2));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

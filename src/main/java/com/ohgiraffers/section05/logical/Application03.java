@@ -23,7 +23,7 @@ public class Application03 {
         int result1 = (false && ++num1 > 0)? num1 : num1;
         // 첫번째가 true면 앞의 num1, false면 뒤의 num1로 가겠다는 말
         System.out.println("&& 실행 확인 : " + result1);
-        // 어차피 &&앞이 false므로 뒤에 식을 연산 안하겠다는말이므로 +1(++num1)안하고 동작안하므로 그대로의 값이 나온다.
+        // 어차피 &&앞이 false므로 뒤에 식을 연산 안하겠다는말이므로 +1(++num1)안하고 동작안하므로 그대로의 값이 나온다. / &&값 10나옴
         // 뒤의 1더하는 ++num1 이하의 값은 무시되었다.
         // 따라서 &&앞이 false면 뒤에 식은 보지 않는다.
 
@@ -35,25 +35,18 @@ public class Application03 {
         *   조건을 작성하는 편이 좋다. (강제성은 아니고, 나중을 위해 좋다는 말이다.)
         * */
 
+        //중요!! 다시 볼 필요 있음!
         int num2 = 10;
 
         int result2 =(true || ++num2 > 0)? num2 : num2;
         System.out.println(" 실행 확인 : " + result2);
         // || 앞이 true면 뒤에 볼것도 없기 때문에 연산 안하고 그대로 나온 것임
+        // 10 나옴....(또는 일때 둘다 거짓이어야하므로, 참이니깐 그대로..)
 
         int result3 =(false|| ++num2 > 0)? num2 : num2;
         System.out.println(" 실행 확인 : " + result3);
-        //false를 넣었을때 실행되어, ++num2, 1이 더해져서 11이 나온것임
-
-
-
-
-
-
-
-
-
-
+        //false를 넣었을때 실행되어, ++num2, 1이 더해져서
+        // 11이 나온것임  (또는 일때 둘다 거짓이여야 하는데, 거짓이니깐 실행되어 11)
 
 
     }

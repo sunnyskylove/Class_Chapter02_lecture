@@ -17,10 +17,10 @@ public class Application01 {
 
         int num = 12;
 
-        num = num + 3;
-        System.out.println("num = " + num);
+        num = num + 3;   //최종 num의 값이다.
+        System.out.println("num = " + num);  //num=15
 
-        num += 3;       // num = num + 3; 과 같은 의미다. (얘도 누적되어서 연산됨..??)
+        num += 3;       // num = num + 3; 과 같은 의미다. (얘도 누적되어서 연산됨..??), num =18
         System.out.println("num = " + num);
 
         num -= 5;       // num = num - 5;
@@ -42,13 +42,8 @@ public class Application01 {
         *   */
         num =- 5;
         System.out.println("num = " + num);
-        // 여기에선 대입연산자가 되버림. 따라서 반드시 순서 표시 잘해야한다..!!
-
-
-
-
-
-
+        // 여기에선 대입연산자가 되버림. 다시 초기화 된것이다. num= -5
+        // 따라서 반드시 순서 표시 잘해야한다..!!
 
     }
 }

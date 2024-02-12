@@ -22,22 +22,21 @@ public class Application01 {
         * */
 
         /* 목차. 1. 논리 연산자 결과값 확인 */
-//        System.out.println("true와 false의 논리 and 연산 :" + (true && true));
-//        System.out.println("true와 true의 논리 and 연산 :" + (true && false));
-//        System.out.println("flase와 true의 논리 and 연산 :" + (false && true));
-//        System.out.println("false와 flase의 논리 and 연산 :" + (false && false));
-//    true, 나머지 false 3개 나와야하는데 뭔가 잘못되었음.....ㅠㅠㅠㅠㅠ
+        System.out.println("true 와 true의 논리 and 연산 : " + (true && true));
+        System.out.println("true 와 false의 논리 and 연산 : " + (true && false));
+        System.out.println("false 와 true의 논리 and 연산 : " + (false && true));
+        System.out.println("false 와 false의 논리 and 연산 : " + (false && false));
 
-//        System.out.println("===================================================");
-//        System.out.println("true와 true의 논리 or 연산:" + (true || true));
-//        System.out.println("false와 flase의 논리 or 연산:" + (true || false));
-//        System.out.println("true와 false의 논리 or 연산:" + (false || true));
-//        System.out.println("false와 false의 논리 or 연산:" + (false || false));
-        //true 3개와 false1개 나옴 뭔가 이상해짐....ㅠㅠㅠㅠ 나중에 비교하자!!
-//        System.out.println("=======================================================");
-//        System.out.println("true의 논리 not 연산 : " + (!true));
-//        System.out.println("false의 논리 not 연산 : " + (!false));
-        //false와 true 나옴........왜???ㅠㅠㅠㅠㅠㅠㅠㅠㅠ
+        System.out.println("===================================================");
+        System.out.println("true 와 true의 논리 or 연산 : " + (true || true));
+        System.out.println("true 와 false의 논리 or 연산 : " + (true || false));
+        System.out.println("false 와 true의 논리 or 연산 : " + (false || true));
+        System.out.println("false 와 false의 논리 or 연산 : " + (false || false));
+
+        System.out.println("====================================================");
+        System.out.println("true의 논리 not 연산 : " + (!true));
+        System.out.println("false의 논리 not 연산 : " + (!false));
+
 
 
 

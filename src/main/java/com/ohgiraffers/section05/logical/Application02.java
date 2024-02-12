@@ -9,7 +9,7 @@ public class Application02 {
         *   논리 & 연산자와 논리 | 연산자의 우선순위
         *   && : 11순위
         *   || : 12순위
-        *   논리 && 연산자의 우선순위가 논리 || 연산자 우선순위 보다 높다.
+        *   논리 && 연산자의 우선순위가 논리 || 연산자 우선순위 보다 높다.  (우선순위: && > ||)
         * */
 
         /* 목차. 1. 1부터 100 사이의 값인지 확인 */
@@ -24,6 +24,7 @@ public class Application02 {
         int convertCharToInt = ch1;
         System.out.println(convertCharToInt);
         //중요!! 문자에서 형변환 자연스럽게 된다는~!!(아스키코드 숫자확인가능) 숫자 71 나와야함~!!
+
         int convertIntToChar = 100;
         char result = (char) convertIntToChar;
         System.out.println("result = " + result);
@@ -43,29 +44,12 @@ public class Application02 {
         /* 목차. 4. 영문자인지 확인 */
         char ch5 = 'f';
         System.out.println("영문자인지 확인 : " + ((ch5 >= 'A' && ch5 <= 'Z') || (ch5 >= 'a' && ch5 <= 'z')));
-        //아스키코드 중간에 다른문자로 비어있어서 완벽한 조건으로 확인위해 소문자, 대문자 모두 입력하여 확인, 연산자의 우선순위로 인해 중간에 () 입력해줌
+        //아스키코드 중간에 다른문자로 비어있어서 완벽한 조건으로 확인위해 소문자, 대문자 모두 입력하여 확인
+        // 연산자의 우선순위로 인해 중간에 () 입력해줌
 
         char ch6 = 'F';
         System.out.println("영문자인지 확인: " + ((ch6 >= 'A' && ch6 <= 'Z') || (ch6 >='a' && ch6 <= 'z')));
         // 반대의 경우도 같음. 따라서 구해야할 값을 미리 지정하고, 만들어준다.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
